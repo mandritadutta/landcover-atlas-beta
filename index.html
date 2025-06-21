@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LandCover Atlas - India</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  
+  <header id="navbar">
+    <h1>LandCover Atlas</h1>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#comparison">Image Comparison</a>
+      <a href="#legend">Legend</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  
+  <section id="overview">
+    <h2>India's Changing Land Use</h2>
+    <p>This dashboard showcases land cover changes across India using satellite-derived classified maps from 2020 and 2024. Understand the impacts of urban growth, deforestation, and agriculture.</p>
+  </section>
+
+  
+  <section id="comparison">
+    <h2>Land Cover: 2020 vs 2024</h2>
+    <div class="image-row">
+      <figure>
+        <img src="images/landcover-2020.jpg" alt="Land cover 2020" />
+        <figcaption>Land Cover - 2020</figcaption>
+      </figure>
+      <figure>
+        <img src="images/landcover-2024.jpg" alt="Land cover 2024" />
+        <figcaption>Land Cover - 2024</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  
+  <section id="legend">
+    <h2>Classification Legend</h2>
+    <ul class="legend-grid">
+      <li><span class="forest"></span> Forest</li>
+      <li><span class="urban"></span> Urban</li>
+      <li><span class="water"></span> Water</li>
+      <li><span class="agriculture"></span> Agriculture</li>
+      <li><span class="barren"></span> Barren Land</li>
+    </ul>
+  </section>
+
+  
+  <section id="about">
+    <h2>Tools & Methods</h2>
+    <p>This project is a prototype public dashboard built with HTML and CSS. Classified maps are assumed outputs from a machine learning model trained on Sentinel-2 imagery using Python, Rasterio, and Scikit-learn.</p>
+    <p>Project by Mandrita Dutta. View on <a href="https://github.com/YOUR-GITHUB" target="_blank">GitHub</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LandCover Atlas. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

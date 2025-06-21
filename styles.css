@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Navbar */
+  #navbar {
+    background: #00704A;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #navbar nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Sections */
+  section {
+    padding: 2rem;
+    margin: 1rem;
+    background: white;
+    border-radius: 8px;
+  }
+  
+  /* Image Grid */
+  .image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .image-row img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  /* Legend Grid */
+  .legend-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  
+  .legend-grid li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .legend-grid span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 3px;
+  }
+  
+  .forest { background-color: green; }
+  .urban { background-color: gray; }
+  .water { background-color: blue; }
+  .agriculture { background-color: yellowgreen; }
+  .barren { background-color: sienna; }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #eee;
+    font-size: 0.9rem;
+  }
+  
+  /* 🌐 Responsive Design */
+  @media (max-width: 768px) {
+    .image-row {
+      flex-direction: column;
+    }
+  
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
